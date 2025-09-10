@@ -20,12 +20,11 @@ export default function RootNavigator() {
   }
   return (
     <RootStack.Navigator id={undefined} screenOptions={{ headerShown: false }}>
-      {/* {user ? (
+      {user ? (
         <RootStack.Screen name="App" component={AppNavigator} />
       ) : (
         <RootStack.Screen name="AuthFlow" component={AuthNavigator} />
-      )} */}
-              <RootStack.Screen name="App" component={AppNavigator} />
+      )}
 
     </RootStack.Navigator>
   );

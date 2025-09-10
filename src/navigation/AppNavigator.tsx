@@ -5,6 +5,7 @@ import Create from "../screens/Create";
 import Profile from "../screens/Profile";
 import Settings from "../screens/Settings";
 import TabNavigator from "./TabNavigator";
+import BottomNavNotched from "../../components/BottomNavNotched";
 
 export type AppStackParamList = {
   Tabs: undefined;
@@ -26,7 +27,7 @@ export default function AppNavigator() {
         animation: "slide_from_right",
         gestureEnabled: true,
       }}>
-      <AppStack.Screen name="Tabs" component={TabNavigator} />
+      <AppStack.Screen name="Tabs" component={BottomNavNotched} />
       <AppStack.Screen name="Home" component={Home} />
       <AppStack.Screen name="Create" component={Create} />
       <AppStack.Screen name="Profile" component={Profile} />

@@ -36,9 +36,11 @@ export default function BottomBottomNavNotched() {
     <CurvedBottomBar.Navigator
       {...({
         type: "DOWN",
-        height: 96,
+        height: 82,
         circleWidth: 64,
+        circleHeight: 32,
         bgColor: "#1B2936",
+        tabBarHeight: 96,
         initialRouteName: "Home",
         screenOptions: {},
         id: "bottom-bottom-notched",
@@ -55,15 +57,16 @@ export default function BottomBottomNavNotched() {
               justifyContent: "center",
               borderWidth: 1.5,
               borderColor: "#F5F5F5",
+              marginTop: -16,
             }}
           >
-            <Svg width={28} height={28} viewBox="0 0 24 24">
+            <Svg width={48} height={48} viewBox="0 0 24 24">
               <Path d="M12 5v14M5 12h14" stroke="#FFFFFF" strokeWidth={3.5} strokeLinecap="round" />
             </Svg>
           </TouchableOpacity>
         ),
         tabBar: ({ routeName, navigate }: any) => (
-          <TouchableOpacity onPress={() => navigate(routeName)} style={{ paddingHorizontal: 24, paddingVertical: 18 }}>
+          <TouchableOpacity onPress={() => navigate(routeName)} style={{ paddingHorizontal: 30, paddingVertical: 18 }}>
             {routeName === "Home" && <IconHome />}
             {routeName === "Search" && <IconSearch />}
             {routeName === "Filters" && <IconFilters />}

@@ -49,7 +49,7 @@ export default function TabNavigator() {
               width: 64,
               height: 64,
               borderRadius: 32,
-              backgroundColor: "#00DDD7",
+              backgroundColor: "red",
               alignItems: "center",
               justifyContent: "center",
               borderWidth: 2,
